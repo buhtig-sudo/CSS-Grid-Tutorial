@@ -1,11 +1,11 @@
 body {
   display: grid;
   grid-template-areas:
-    "header header header ads"
-    "nav article some ads"
-    "footer footer footer ads";
-  grid-template-rows: 40px 1fr 60px 0px;
-  grid-template-columns: 11% 1fr 15% 15%;
+    "header header header"
+    "nav article article"
+    "footer footer footer";
+  grid-template-rows: 40px 1fr 60px;
+  grid-template-columns: 11% 1fr 15%;
   grid-gap: 3px;
   height: 100vh;
   margin: 0;
@@ -15,7 +15,6 @@ header,
 footer,
 article,
 nav,
-ads,
 div {
   padding: 20px;
   background: gold;
@@ -28,15 +27,11 @@ div {
 }
 #mainArticle {
   grid-area: article;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 #mainNav {
   grid-area: nav;
-}
-#siteAds {
-  grid-area: ads;
-}
-#some {
-  grid-area: some;
 }
 #mainNav a {
   display: block;
