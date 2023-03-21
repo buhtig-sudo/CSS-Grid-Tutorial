@@ -16,11 +16,11 @@ body {
   body {
     grid-template-areas:
       "header"
+      "nav"
       "article"
       "ads"
-      "nav"
       "footer";
-    grid-template-rows: 80px 1fr 70px 1fr 70px;
+    grid-template-rows: 80px 100px 1fr 0px 70px;
     grid-template-columns: 1fr;
   }
 }
@@ -40,10 +40,23 @@ div {
 }
 #mainArticle {
   grid-area: article;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 #mainNav {
   grid-area: nav;
+  overflow: auto;
 }
+#mainNav ul {
+  list-style: none;
+  text-decoration: none;
+}
+#mainNav :any-link {
+  text-decoration: none;
+  padding: 0;
+}
+
 #siteAds {
   grid-area: ads;
 }
