@@ -28,7 +28,10 @@ body {
     margin-left: 30px;
   }
   #mainNav {
-    border: 3px solid black;
+    border: 3px solid yyyellow;
+
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 }
 header,
@@ -65,4 +68,25 @@ div {
 
 #siteAds {
   grid-area: ads;
+}
+#intro-grid-fill {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-gap: 2vw;
+}
+#intro-grid code {
+  font-size: 15px;
+  padding: 0.5em;
+  background: gold;
+  text-align: center;
+}
+#intro-grid-fit {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 2vw;
+}
+#intro-grid-fit code {
+  font-size: 15px;
+  padding: 1.5em;
+  text-align: center;
 }
