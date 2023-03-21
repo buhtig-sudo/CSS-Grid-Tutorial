@@ -2,7 +2,7 @@ body {
   display: grid;
   grid-template-areas:
     "header header header"
-    "nav article article"
+    "nav article ads"
     "footer footer footer";
   grid-template-rows: 80px 1fr 70px;
   grid-template-columns: 20% 1fr 15%;
@@ -18,16 +18,21 @@ body {
       "header"
       "nav"
       "article"
-      "article"
+      "ads"
       "footer";
-    grid-template-rows: 80px 1fr 1fr 1fr 70px;
+    grid-template-rows: 80px 100px 1fr 0px 70px;
     grid-template-columns: 1fr;
+  }
+  #mainNav ul {
+    margin-top: -10px;
+    text-align: center;
   }
 }
 header,
 footer,
 article,
 nav,
+ads,
 div {
   padding: 1.2em;
   background: gold;
@@ -40,7 +45,6 @@ div {
 }
 #mainArticle {
   grid-area: article;
-  height: ;
   padding: 0;
   overflow-y: auto;
   overflow-x: hidden;
@@ -54,4 +58,8 @@ div {
 }
 #mainNav :any-link {
   text-decoration: none;
+}
+
+#siteAds {
+  grid-area: ads;
 }
