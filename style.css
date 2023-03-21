@@ -2,7 +2,7 @@ body {
   display: grid;
   grid-template-areas:
     "header header header"
-    "nav article ads"
+    "nav article article"
     "footer footer footer";
   grid-template-rows: 80px 1fr 70px;
   grid-template-columns: 20% 1fr 15%;
@@ -18,9 +18,9 @@ body {
       "header"
       "nav"
       "article"
-      "ads"
+      "article"
       "footer";
-    grid-template-rows: 80px 100px 1fr 0px 70px;
+    grid-template-rows: 80px 1fr 1fr 1fr 70px;
     grid-template-columns: 1fr;
   }
 }
@@ -40,13 +40,13 @@ div {
 }
 #mainArticle {
   grid-area: article;
+  height: ;
   padding: 0;
   overflow-y: auto;
   overflow-x: hidden;
 }
 #mainNav {
   grid-area: nav;
-  overflow: auto;
 }
 #mainNav ul {
   list-style: none;
@@ -54,9 +54,4 @@ div {
 }
 #mainNav :any-link {
   text-decoration: none;
-  padding: 0;
-}
-
-#siteAds {
-  grid-area: ads;
 }
