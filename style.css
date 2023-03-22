@@ -29,8 +29,11 @@ body {
   }
   #mainNav {
     border: 3px solid yyyellow;
-    overflow-y: auto;
-    overflow-x: hidden;
+    overflow: auto;
+    overflow: hidden;
+  }
+  pre {
+    overflow: auto;
   }
 }
 header,
@@ -87,56 +90,4 @@ div {
   font-size: 15px;
   padding: 1.5em;
   text-align: center;
-}
-pre {
-  background: #c2cec4;
-  padding-top: 5%;
-  padding-bottom: 5%;
-
-  background: -moz-linear-gradient(left, #c2cec4 0%, #90a1a4 50%, #b3c5c3 100%);
-  background: -webkit-linear-gradient(
-    left,
-    #c2cec4 0%,
-    #90a1a4 50%,
-    #b3c5c3 100%
-  );
-  background: linear-gradient(to right, #c2cec4 0%, #90a1a4 50%, #b3c5c3 100%);
-
-  -webkit-box-shadow: inset -1px 3px 8px 5px #1f87ff, 2px 5px 16px 0px #0b325e,
-    -3px 13px 4px 16px rgba(0, 0, 0, 0.05);
-  box-shadow: inset -1px 3px 8px 5px #1f87ff, 2px 5px 16px 0px #0b325e,
-    -3px 13px 4px 16px rgba(0, 0, 0, 0.05);
-}
-@media (max-width: 385px) {
-  pre {
-    overflow-x: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #c2cec4;
-    padding-left: 60px;
-    background: -moz-linear-gradient(
-      left,
-      #c2cec4 0%,
-      #90a1a4 50%,
-      #b3c5c3 100%
-    );
-    background: -webkit-linear-gradient(
-      left,
-      #c2cec4 0%,
-      #90a1a4 50%,
-      #b3c5c3 100%
-    );
-    background: linear-gradient(
-      to right,
-      #c2cec4 0%,
-      #90a1a4 50%,
-      #b3c5c3 100%
-    );
-
-    -webkit-box-shadow: inset -1px 3px 8px 5px #1f87ff, 2px 5px 16px 0px #0b325e,
-      -3px 13px 4px 16px rgba(0, 0, 0, 0.05);
-    box-shadow: inset -1px 3px 8px 5px #1f87ff, 2px 5px 16px 0px #0b325e,
-      -3px 13px 4px 16px rgba(0, 0, 0, 0.05);
-  }
 }

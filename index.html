@@ -41,14 +41,15 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-gap: 2vw;}</code>   
-  <code> #intro-grid-fit { 
+  <code> 
+  #intro-grid-fit { 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  grid-gap: 2vw;}</code>   
+  grid-gap: 2vw;}
+  </code>   
   </div>
    <h1>Сетка с медиазапросами</h1>
-   <pre>
-  body { 
+   <pre>body { 
   display: grid;
   grid-template-areas: 
     "header header header"
@@ -61,8 +62,8 @@
   height: 100vh;
   margin: 0;
   }  
-  /* Stack the layout on small 
-  devices/viewports. */
+  
+  /* Stack the layout on small devices/viewports. */
   @media all and (max-width: 575px) {
   body { 
     grid-template-areas: 
@@ -71,7 +72,7 @@
       "ads"
       "nav"
       "footer";
-    grid-template-rows: 80px 1fr 70px 1fr 70px;  
+    grid-template-rows: 80px 1fr 0 1fr 70px;  
     grid-template-columns: 1fr;
   }
   }
