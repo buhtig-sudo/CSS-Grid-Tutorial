@@ -94,8 +94,8 @@ pre {
   justify-content: center;
   align-items: center;
   background: #c2cec4;
-  padding: 10%;
-  padding-left: 70%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   background: -moz-linear-gradient(left, #c2cec4 0%, #90a1a4 50%, #b3c5c3 100%);
   background: -webkit-linear-gradient(
     left,
@@ -109,4 +109,37 @@ pre {
     -3px 13px 4px 16px rgba(0, 0, 0, 0.05);
   box-shadow: inset -1px 3px 8px 5px #1f87ff, 2px 5px 16px 0px #0b325e,
     -3px 13px 4px 16px rgba(0, 0, 0, 0.05);
+}
+@media (max-width: 385px) {
+  pre {
+    overflow-x: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #c2cec4;
+    padding-left: 100px;
+    background: -moz-linear-gradient(
+      left,
+      #c2cec4 0%,
+      #90a1a4 50%,
+      #b3c5c3 100%
+    );
+    background: -webkit-linear-gradient(
+      left,
+      #c2cec4 0%,
+      #90a1a4 50%,
+      #b3c5c3 100%
+    );
+    background: linear-gradient(
+      to right,
+      #c2cec4 0%,
+      #90a1a4 50%,
+      #b3c5c3 100%
+    );
+
+    -webkit-box-shadow: inset -1px 3px 8px 5px #1f87ff, 2px 5px 16px 0px #0b325e,
+      -3px 13px 4px 16px rgba(0, 0, 0, 0.05);
+    box-shadow: inset -1px 3px 8px 5px #1f87ff, 2px 5px 16px 0px #0b325e,
+      -3px 13px 4px 16px rgba(0, 0, 0, 0.05);
+  }
 }
