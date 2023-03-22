@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+<meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
  <link rel="stylesheet" href="style.css">
   
@@ -10,30 +10,36 @@
 <body>
   <header id="pageHeader">Documentation</header>
   <article id="mainArticle">
-    <section id="one">
-        <header>Создание адаптивной сетки</header>
+  <section id="one">
+  <h1>Создание адаптивной сетки</h1>
         <article>
         
-           <h1>auto-fill</h1>
- <div id="intro-grid-fill">
-         
-  <code> #intro-grid-fill { 
+ <h4>auto-fill</h4>
+ <div id="intro-grid-fill">  
+ <code>
+  #intro-grid-fill { 
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  grid-gap: 2vw;}</code>   
-  <code> #intro-grid-fill { 
+  grid-gap: 2vw;}
+  </code>   
+  <code>
+  #intro-grid-fill { 
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  grid-gap: 2vw;}</code>   
-  <code> #intro-grid-fill { 
+  grid-gap: 2vw;}
+  </code>   
+  <code>
+   #intro-grid-fill { 
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  grid-gap: 2vw;}</code>   
+  grid-gap: 2vw;}
+  </code>   
   </div>
-           <h1>auto-fit</h1>
- <div id="intro-grid-fit">
+  <h4>auto-fit</h4>
+  <div id="intro-grid-fit">
          
-  <code> #intro-grid-fit { 
+  <code> 
+  #intro-grid-fit { 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-gap: 2vw;}</code>   
@@ -48,8 +54,8 @@
   grid-gap: 2vw;}
   </code>   
   </div>
-   <h1>Сетка с медиазапросами</h1>
-   <pre>body { 
+  <h4>Сетка с медиазапросами</h4>
+  <pre>body { 
   display: grid;
   grid-template-areas: 
     "header header header"
@@ -77,32 +83,43 @@
   }
   }
   </pre>
-        </article>
-        </section>
-         <section id="two">
-        <header>Two text</header>
-        <article>
-          <p>
-            some text two
-            some text two
-            some text two
-            some text two
-            some text two
-            some text two
-            some text two
-            some text two
-            some text two
-            some text two
-            some text two
-            some text two
-            some text two
-            some text two
-            some text two
-            some text two
-            </p>
-        </article>
-        </section>
-         <section id="three">
+  <h4>Явная и неявная сетки</h4>
+  <pre>
+  #grid { 
+  display: grid;
+  grid-template-rows: 60px 60px;    //явная строка
+  grid-template-columns: 1fr 1fr;   //явный столбец
+  grid-auto-rows: 60px;  // высота строки для неявной сетки
+  grid-auto-columns: 60px; // ширина столбца для неявной сетки
+  // По умолчанию неявная строка использует размер трека (который основан на контенте) <b>.auto</b>
+  grid-gap: 10px;
+  }
+  #grid > div {
+  padding: .5em;
+  background: gold;
+  text-align: center;                       
+  }
+  </pre>
+  <h4>grid-auto-flow</h4>
+  <p>Указывает будет ли неявная сетка использовать строки или столбцы</p> 
+  <pre>
+  #grid { 
+  display: grid;
+  grid-template-rows: 80px 80px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  grid-auto-flow: column; //чтобы сделать столбцы неявной сетки регулируемыми, нужно использовать <b>grid-auto-columns: 1fr</b>
+  }
+  </pre>
+  </article>
+  </section>
+  <section id="two">
+  <h1>Размещение элементов сетки</h1>
+  <article>
+  </article>
+  </section>
+  
+  <section id="three">
         <header>Three text</header>
         <article>
           <p>
@@ -138,7 +155,7 @@
             </p>
         </article>
         </section>
-         <section id="four">
+        <section id="four">
         <header>Four text</header>
         <article>
           <p>
