@@ -12,12 +12,7 @@
   font-size: 4vw;
   padding: 8px;
 }
-.inner-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-color: blueviolet;
-  grid-gap: 3px;
-}
+
 #inner-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -26,21 +21,4 @@
 #inner-grid > div {
   background: lightgreen;
   padding: 8px;
-}
-
-ul {
-  display: grid;
-  grid: auto-flow / auto 1fr;
-}
-li {
-  grid-column: span 2;
-  display: grid;
-  grid: subgrid;
-  border: solid;
-}
-label {
-  grid-column: 1;
-}
-input {
-  grid-column: 2;
 }
