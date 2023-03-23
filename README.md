@@ -1,1 +1,5 @@
-[Create a Website Layout with CSS Grid](https://www.quackit.com/css/grid/tutorial/create_a_website_layout.cfm)
+[Размещение элементов сетки](https://www.quackit.com/css/grid/tutorial/grid_item_placement.cfm)
+
+![Элементы сетки, помещенные в сетку](https://www.quackit.com/pix/stock/css_grid_placement_with_grid_items.png)
+
+### В приведенном выше примере первый элемент сетки начинается со строки 1 строки и строки столбца 1. Он заканчивается строкой строки 2 и строкой столбца 2. Второй элемент сетки начинается со строки строки 3 и строки столбца 2. Он заканчивается строкой строки 4 и строкой столбца 4.
