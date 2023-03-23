@@ -1,1 +1,1 @@
-[Create a Website Layout with CSS Grid](https://www.quackit.com/css/grid/tutorial/create_a_website_layout.cfm)
+[Create a Website Layout with CSS Grid](https://www.quackit.com/css/grid/tutorial/create_a_responsive_grid.cfm)
